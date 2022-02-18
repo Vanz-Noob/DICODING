@@ -4,9 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio Renaldi Azhar Website</title> <!--Memberi nama pada tab browser-->
+        <title>Website Portofolio Renaldi Azhar</title> <!--Memberi nama pada tab browser-->
         <link rel="stylesheet" href="styles/styles.css">
-        <script src="styles/script.js"></script>
+        <!-- <script src="styles/script.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--jquerycode-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <!--HEAD END-->
 
@@ -17,17 +19,59 @@
             <!--NAVBAR START-->
             <nav class="navbar">
                 <div class="widthMax">
-                    <div class="logo"><a href="#">Portofolio Renaldi Azhar</a></div>
+                    <div class="logo"><a href="#">Portofolio</a></div>
                     <ul class="menu">
-                        <li><a href="#"></a>Home</li>
-                        <li><a href="#"></a>Tentang Saya</li>
-                        <li><a href="#"></a>Kontak Saya</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tentang Saya</a></li>
+                        <li><a href="#">Kontak Saya</a></li>
                     </ul>
+                    <div class="btnMenu">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
             </nav>
             <!--NAVBAR END-->
         </header>
         <!--HEADER END-->
+
+        <!-- HOME START -->
+        <section class="mainHome" id="home">
+            <div class="widthMax">
+                <div class="homeContent">
+                    <div class="text_0">Well hello there!</div>
+                    <div class="text_1">My Name is</div>
+                    <div class="text_2"><span>Renaldi Azhar</span></div>
+                    <div class="text_3">I'm a Backend Developer</div>
+                </div>
+            </div>
+
+        </section>
+        <!-- HOME END -->
+
+        <!-- ABOUTME START -->
+        <section class="tentangSaya" id="tentangSaya">
+            <div class="widthMax">
+                <h2 class="judul">Tentang Saya</h2>
+                <div class="konten-ttg">
+                    <div class="gambar kiri">
+                        <img src="assets/bg.jpg" alt="">
+                    </div>
+                    <div class="kanan">
+                        <div class="teks">
+                            <article>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto vero, aut libero totam eius vitae impedit est dolore nulla repudiandae fuga, unde asperiores dolorum rem nihil similique dicta dignissimos. Sunt amet optio minima, sequi excepturi veritatis, ut eius, provident omnis non ipsa quaerat necessitatibus? Libero consequatur repudiandae suscipit veritatis?</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOME END -->
     </body>
     <!--BODY END-->
+    <footer>
+        <span>Created By Renaldi Azhar 2022</span>
+    </footer>
+    <script src="styles/script.js"></script>
 </html>
