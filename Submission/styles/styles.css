@@ -1,3 +1,4 @@
+/* menambahkan font dari google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
@@ -5,6 +6,38 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* membuat scrolling menjadi smooth START */
+html{
+    scroll-behavior: smooth;
+}
+/* membuat scrolling menjadi smooth END */
+
+/* menambahkan auto scrolling START*/
+.scroll-upbtn{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background: #C84B31;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2 ease;
+    right: 30px;
+    bottom: 10px;
+    line-height: 45px;
+    color: #064663;
+    border-radius: 10px;
+}
+.scroll-upbtn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+.scroll-upbtn:hover{
+    filter: brightness(90%);
+}
+/* menambahkan auto scrolling END */
+
 /*merapihkan posisi navbar START*/
 .navbar{
     position: fixed;
@@ -56,6 +89,7 @@
 /* merapihkan button menu START */
 .btnMenu{
     color: aliceblue;
+   display: none;
     font-size: 22px;
     cursor: pointer;
 }
@@ -68,7 +102,7 @@
 .mainHome{
     display: flex;
     color: #ffff;
-    background: url("../assets/bg.png") no-repeat center;
+    background: url("../assets/bg.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 500px;
@@ -97,6 +131,10 @@
 /* merapihkan home END */
 
 /* merapihkan tentangSaya START */
+#tentangSaya{
+    background-color: #ECDBBA;
+    padding-bottom: 60px;
+}
 .tentangSaya{
     display: flex;
     color: #191919;
@@ -123,6 +161,7 @@
     height: 400px;
     width: 400px;
     object-fit: cover;
+    border-radius: 20px;
 }
 .tentangSaya .konten-ttg .kanan{
     width: 50%;
@@ -134,6 +173,105 @@
     font-weight: 600;
 }
 /* merapihkan tentangSaya END */
+
+/* merapihkan sertifikasiSaya START */
+#certSaya{
+    background-color:#E0C097 ;
+}
+.certSaya{
+    display: flex;
+    color: #191919;
+    font-family: 'Ubuntu',sans-serif;
+}
+.cert-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.certSaya .certTeks{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 30px;
+    margin: 10px;
+    color: #191919;
+}
+.certTeks p{
+    color: aliceblue;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+.cert-col{
+    flex-basis: 25%;
+    text-align: center;
+    margin: 20px;
+}
+.cert-col p{
+    font-size: 15px;
+    line-height: 18px;
+}
+.cert-col img{
+    border-radius: 2.5%;
+}
+
+/* merapihkan sertifkasiSaya END */
+
+/* merapihkan kontakSaya START */
+#kontakSaya{
+    background-color: #ECB365;
+}
+/* .kontakSaya .widthMax{
+    margin: auto 0 auto 40px;
+} */
+.kontakSaya{
+    display: flex;
+    color: #191919;
+    font-family: 'Ubuntu',sans-serif;
+}
+.kontakSaya h2{
+    padding-top: 50px;
+}
+.kontakSaya .kontak .cnt-kiri{
+    width: calc(50% - 30px);
+}
+.kontakSaya .kontak .cnt-kiri p{
+    text-align: justify;
+}
+.kontakSaya .kontak .cnt-kiri .ico{
+    margin: 15px 0;
+    display: flex;
+}
+.kontakSaya .kontak .cnt-kiri .row{
+    display:flexbox;
+    margin: auto;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.kontakSaya .kontak .cnt-kiri i{
+    font-size: 30px;
+    color: #064663;
+}
+.kontakSaya .kontak .info .head{
+    font-weight: 500;
+}
+
+/* merapihkan kontakSaya END */
+
+/* merapihkan footer START */
+footer{
+    background: #064663;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* merapihkan footer END */
 
 /* query media responsif START */
 @media (widthMax:822px){
@@ -163,3 +301,9 @@
         z-index: 999;
     }
 }
+@media (max-width: 990px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+/* query media responsif END */
