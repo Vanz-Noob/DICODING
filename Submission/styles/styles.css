@@ -97,17 +97,41 @@
 /* merapihkan home END */
 
 /* merapihkan tentangSaya START */
-.aboutMe{
+.tentangSaya{
     display: flex;
-    color: #ffff;
-}
-.aboutMe .widthMax {
-    margin: auto;
-}
-.aboutMe .textAboutMe{
-    color:#C84B31;
+    color: #191919;
     font-family: 'Ubuntu',sans-serif;
+}
+.tentangSaya .judul{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 40px;
+    margin: 20px;
+    color: #191919;
+}
+.tentangSaya .konten-ttg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.tentangSaya .konten-ttg .kiri{
+    width: 50%;
+}
+.tentangSaya .konten-ttg .kiri img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.tentangSaya .konten-ttg .kanan{
+    width: 50%;
+}
+
+.tentangSaya .konten-ttg .kanan .teksAtas{
     font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 /* merapihkan tentangSaya END */
 
