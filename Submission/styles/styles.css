@@ -21,7 +21,7 @@ html{
     text-align: center;
     pointer-events: none;
     opacity: 0;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     right: 30px;
     bottom: 10px;
     line-height: 45px;
@@ -45,7 +45,7 @@ html{
     padding: 30px 0;
     /* background: #064663; */
     font-family: 'Poppins', sans-serif;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky{
     padding: 10px 0;
@@ -89,7 +89,7 @@ html{
 /* merapihkan button menu START */
 .btnMenu{
     color: aliceblue;
-   display: none;
+    display: none;
     font-size: 22px;
     cursor: pointer;
 }
@@ -234,6 +234,7 @@ html{
     font-family: 'Ubuntu',sans-serif;
 }
 .kontakSaya h2{
+    display: flex;
     padding-top: 50px;
 }
 .kontakSaya .kontak .cnt-kiri{
@@ -273,6 +274,16 @@ footer{
 }
 /* merapihkan footer END */
 
+.sidebar{
+    border: 1px solid blue;
+    height: 100%;
+    width: 50px;
+    transition: all 2s ease;
+}
+.sidebar.active{
+    width: 1px;
+}
+
 /* query media responsif START */
 @media (widthMax:822px){
     .widthMax{
@@ -301,9 +312,18 @@ footer{
         z-index: 999;
     }
 }
-@media (max-width: 990px) {
+@media (max-width: 914px) {
     .max-width{
         padding: 0 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .btnMenu{
+        display: flex;
+    }
+    .navbar .menu .li{
+        margin: auto;
     }
 }
 /* query media responsif END */
