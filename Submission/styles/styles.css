@@ -222,13 +222,26 @@ html{
 /* merapihkan sertifkasiSaya END */
 
 /* merapihkan kontakSaya START */
+
 #kontakSaya{
     background-color: #ECB365;
 }
-/* .kontakSaya .widthMax{
-    margin: auto 0 auto 40px;
-} */
+.kontak{
+    display: flex;
+    flex-direction: row;
+}
+.kontakSaya .kontak .photo{
+    display: flex;
+}
+.kontakSaya .kontak .photo img{
+    display: flex;
+    width: 200px;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-right: 20px;
+}
 .kontakSaya{
+    float: center;
     display: flex;
     color: #191919;
     font-family: 'Ubuntu',sans-serif;
@@ -236,6 +249,8 @@ html{
 .kontakSaya h2{
     display: flex;
     padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 220px;
 }
 .kontakSaya .kontak .cnt-kiri{
     width: calc(50% - 30px);
@@ -248,7 +263,7 @@ html{
     display: flex;
 }
 .kontakSaya .kontak .cnt-kiri .row{
-    display:flexbox;
+    display:flex;
     margin: auto;
     height: 70px;
     align-items: center;
