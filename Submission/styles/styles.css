@@ -21,7 +21,7 @@ html{
     text-align: center;
     pointer-events: none;
     opacity: 0;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     right: 30px;
     bottom: 10px;
     line-height: 45px;
@@ -45,7 +45,7 @@ html{
     padding: 30px 0;
     /* background: #064663; */
     font-family: 'Poppins', sans-serif;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky{
     padding: 10px 0;
@@ -89,7 +89,7 @@ html{
 /* merapihkan button menu START */
 .btnMenu{
     color: aliceblue;
-   display: none;
+    display: none;
     font-size: 22px;
     cursor: pointer;
 }
@@ -222,19 +222,35 @@ html{
 /* merapihkan sertifkasiSaya END */
 
 /* merapihkan kontakSaya START */
+
 #kontakSaya{
     background-color: #ECB365;
 }
-/* .kontakSaya .widthMax{
-    margin: auto 0 auto 40px;
-} */
+.kontak{
+    display: flex;
+    flex-direction: row;
+}
+.kontakSaya .kontak .photo{
+    display: flex;
+}
+.kontakSaya .kontak .photo img{
+    display: flex;
+    width: 200px;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-right: 20px;
+}
 .kontakSaya{
+    float: center;
     display: flex;
     color: #191919;
     font-family: 'Ubuntu',sans-serif;
 }
 .kontakSaya h2{
+    display: flex;
     padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 220px;
 }
 .kontakSaya .kontak .cnt-kiri{
     width: calc(50% - 30px);
@@ -247,7 +263,7 @@ html{
     display: flex;
 }
 .kontakSaya .kontak .cnt-kiri .row{
-    display:flexbox;
+    display:flex;
     margin: auto;
     height: 70px;
     align-items: center;
@@ -272,6 +288,16 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 /* merapihkan footer END */
+
+.sidebar{
+    border: 1px solid blue;
+    height: 100%;
+    width: 50px;
+    transition: all 2s ease;
+}
+.sidebar.active{
+    width: 1px;
+}
 
 /* query media responsif START */
 @media (widthMax:822px){
@@ -301,9 +327,18 @@ footer{
         z-index: 999;
     }
 }
-@media (max-width: 990px) {
+@media (max-width: 914px) {
     .max-width{
         padding: 0 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .btnMenu{
+        display: flex;
+    }
+    .navbar .menu .li{
+        margin: auto;
     }
 }
 /* query media responsif END */

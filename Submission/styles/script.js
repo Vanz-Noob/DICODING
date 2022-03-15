@@ -20,3 +20,10 @@ $(document).ready(function(){
         $('html').animate({scrollTop: 0});
         $('html').css("scrollBehavior", "auto");
     });
+
+    //untuk menghidupkan btn sidebar
+    let sidebar=document.querySelector('.sidebar');
+    let btn=document.querySelector('#btn');
+    btn.onclick=function(){
+        sidebar.classList.toggle('active')
+    }
